@@ -1,5 +1,16 @@
 package com.example.paymentservice.paymentgateways;
 
 
-public class StripePaymentGateway {
+import com.example.paymentservice.models.PaymentStatus;
+
+public class StripePaymentGateway implements PaymentGatewayInterface{
+    @Override
+    public String createPaymentLink(Long amount, String userName, String userEmail, String userPhone, Long orderId) {
+        return "";
+    }
+
+    @Override
+    public PaymentStatus getPaymentStatus(Long paymentId) {
+        return null;
+    }
 }

@@ -1,2 +1,14 @@
-package com.example.paymentservice.controllers;public class JuspayWebhookController {
+package com.example.paymentservice.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/webhooks/juspay")
+public class JuspayWebhookController {
+
+    public  void handleWebhookEvent() {
+        // Handle Stripe webhook event
+    }
+
 }
